@@ -57,7 +57,7 @@ and user login/logout functionality.
 
 3.Run the Development Server: npm start
 
-![image alt](![image alt](Screenshot 2024-09-05 142118.png)
+![image alt]((https://github.com/Rohitbijwe9/Product-Lead-Management./blob/master/Screenshot%202024-09-05%20142118.png))
 
 
 

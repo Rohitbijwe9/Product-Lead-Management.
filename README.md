@@ -49,7 +49,7 @@ pip install django-cors-headers
 Access the Swagger API Documentation: After running the server, you can access the Swagger documentation at:
 http://127.0.0.1:8000/swagger/
 
-#Frontend (React)
+# Frontend (React)
 User-friendly interface for managing products.
 Login/Logout functionality for users.
 Backend Installation Guide

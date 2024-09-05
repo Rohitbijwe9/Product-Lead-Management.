@@ -3,8 +3,9 @@ The backend for the Product Lead Management project, built with Django and Djang
 It provides API endpoints for managing products and leads.
 
 # Swagger API Documentation
-   The API documentation for this project is available in Swagger.py file.
-   To access the documentation: http://127.0.0.1:8000/swagger/
+   The API documentation for this project is available in Swagger .
+   
+   To access the documentation after running backend serever: http://127.0.0.1:8000/swagger/
 
 # Backend
 # Features
@@ -50,14 +51,11 @@ and user login/logout functionality.
 
 # Installation
 
-1. For change frontend directry
-  cd frontend
+1. For change frontend directry: cd frontend
 
-2.Install dependencies
-  npm install
+2.Install dependencies: npm install
 
-3.Run the Development Server
-   npm start
+3.Run the Development Server: npm start
 
 
   

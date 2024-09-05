@@ -2,9 +2,7 @@
 A full-stack application built with Django (backend) and React (frontend) for managing products and leads,
 with CRUD operations and report generation.
 
-#Features
-
-#Backend (Django)
+# Features Backend (Django)
 
 1. Lead Management: Create leads through an open API (no authentication required).
 • Reporting APIs:

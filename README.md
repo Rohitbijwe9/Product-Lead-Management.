@@ -55,10 +55,11 @@ and user login/logout functionality.
 
 2.Install dependencies: npm install
 
-
-![image alt](Screenshot 2024-09-05 142118.png)
-
 3.Run the Development Server: npm start
+
+![image alt](![image alt](Screenshot 2024-09-05 142118.png)
+
+
 
 
   

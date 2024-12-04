@@ -20,60 +20,63 @@ An advanced backend solution built with Django and Django REST Framework to stre
 ### Installation
 
 1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Rohitbijwe9/Library-Management-System-.git
-   cd Library-Management-System-
+    ```bash
+    git clone https://github.com/Rohitbijwe9/Library-Management-System-.git
+    cd Library-Management-System-
+    ```
 
 2. **Set Up Virtual Environment**:
     ```bash
+    python -m venv venv
+    source venv/bin/activate  # Linux/macOS
+    venv\Scripts\activate     # Windows
+    ```
 
-   python -m venv venv
-   source venv/bin/activate  # Linux/macOS
-   venv\Scripts\activate     # Windows
-
-
-3.**Install Dependencies**:
+3. **Install Dependencies**:
     ```bash
+    pip install -r requirements.txt
+    ```
 
-      pip install -r requirements.txt
-
-
-4.**Apply Migrations**:
+4. **Apply Migrations**:
     ```bash
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
 
-      python manage.py makemigrations
-      python manage.py migrate
+5. **Create Superuser**:
+    ```bash
+    python manage.py createsuperuser
+    ```
 
-5.**Create Superuser**:
-   ```bash
-      python manage.py createsuperuser
+6. **Run the Server**:
+    ```bash
+    python manage.py runserver
+    ```
 
-6.**Run the Server**:
-      ```bash
+7. **Access the Swagger API Documentation**:  
+    After running the server, access the Swagger documentation at:
+    ```bash
+    http://127.0.0.1:8000/swagger/
+    ```
 
-python manage.py runserver
+## 📝 API Endpoints
 
+### Librarian Endpoints
+- **POST /api/users/**: Create a new library user.
+- **PUT /api/users/{id}/**: Update an existing library user.
+- **DELETE /api/users/{id}/**: Delete a library user.
+- **GET /api/borrow-requests/**: Get all borrow requests.
+- **PATCH /api/borrow-requests/{id}/**: Approve or deny a borrow request.
+- **GET /api/history/**: Get a list of borrow history.
 
-7.**Access the Swagger API Documentation: After running the server, access the Swagger documentation at**:
+### Library User Endpoints
+- **GET /api/books/**: Get a list of available books.
+- **POST /api/borrow-requests/**: Submit a request to borrow a book.
+- **GET /api/history/{user_id}/**: View personal borrow history.
+
+## 📑 API Documentation (Swagger)
+Swagger UI provides interactive API documentation that makes it easy to test the endpoints.
+
+Access the API documentation at:  
+```bash
 http://127.0.0.1:8000/swagger/
-
-8.**📝 API Endpoints**
-
-Librarian Endpoints
-http://127.0.0.1:8000/POST /api/users/: Create a new library user.
-http://127.0.0.1:8000/PUT /api/users/{id}/: Update an existing library user.
-http://127.0.0.1:8000/DELETE /api/users/{id}/: Delete a library user.
-http://127.0.0.1:8000/GET /api/borrow-requests/: Get all borrow requests.
-http://127.0.0.1:8000/PATCH /api/borrow-requests/{id}/: Approve or deny a borrow request.
-http://127.0.0.1:8000/GET /api/history/: Get a list of borrow history.
-Library User Endpoints
-http://127.0.0.1:8000/GET /api/books/: Get a list of available books.
-http://127.0.0.1:8000/POST /api/borrow-requests/: Submit a request to borrow a book.
-http://127.0.0.1:8000/GET /api/history/{user_id}/: View personal borrow history.
-
-9.**📑 API Documentation (Swagger)**
-Swagger UI provides an interactive API documentation that makes it easy to test the endpoints.
-
-Access the API documentation at:
-http://127.0.0.1:8000/swagger/
-

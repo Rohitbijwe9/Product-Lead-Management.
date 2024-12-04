@@ -75,7 +75,6 @@ An advanced backend solution built with Django and Django REST Framework to stre
 - **GET /api/history/{user_id}/**: View personal borrow history.
 
 ## 📑 API Documentation (Swagger)
-Swagger UI provides interactive API documentation that makes it easy to test the endpoints.
 
 Access the API documentation at:  
 ```bash

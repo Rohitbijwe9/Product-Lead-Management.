@@ -27,25 +27,30 @@ An advanced backend solution built with Django and Django REST Framework to stre
 2. **Set Up Virtual Environment**:
     ```bash
 
-python -m venv venv
-source venv/bin/activate  # Linux/macOS
-venv\Scripts\activate     # Windows
+   python -m venv venv
+   source venv/bin/activate  # Linux/macOS
+   venv\Scripts\activate     # Windows
 
 
 3.**Install Dependencies**:
-pip install -r requirements.txt
+    ```bash
+
+      pip install -r requirements.txt
 
 
 4.**Apply Migrations**:
-python manage.py makemigrations
-python manage.py migrate
+    ```bash
 
+      python manage.py makemigrations
+      python manage.py migrate
 
 5.**Create Superuser**:
-python manage.py createsuperuser
-
+   ```bash
+      python manage.py createsuperuser
 
 6.**Run the Server**:
+      ```bash
+
 python manage.py runserver
 
 
